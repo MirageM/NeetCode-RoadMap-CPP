@@ -14,8 +14,8 @@ public:
             ans[key].push_back(s);
         }
         vector<vector<string>> result;
-        for(auto& entry: ans){
-            result.push_back(entry.second);
+        for(auto& pair: ans){
+            result.push_back(pair.second);
         }
         return result;
     }
