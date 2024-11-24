@@ -10,7 +10,7 @@ public:
                 if(cell == '.'){
                     continue;
                 }
-                if(cols[c].count(cell) && rows[r].count(cell) || squares[(r / 3) * 3 + c / 3].count(cell)){
+                if(cols[c].count(cell) || rows[r].count(cell) || squares[(r / 3) * 3 + c / 3].count(cell)){
                     return false;
                 }
                 cols[c].insert(cell);
