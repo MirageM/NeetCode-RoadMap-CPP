@@ -6,7 +6,7 @@ public:
             if(hset.find(nums[i]) != hset.end()){
                 return true;
             }
-            hset.insert({nums[i], i});
+            hset.insert(nums[i]);
         }
         return false;
     }
